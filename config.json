@@ -1,0 +1,6 @@
+{
+    "token": "your token here",
+    "autoDeleteCommands": true,
+    "commandPrefix": "~",
+    "commandIdWhitelist": ["your userid here", "you can add userids like this", "so that more people can run commands"]
+}

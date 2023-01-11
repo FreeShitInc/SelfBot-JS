@@ -1,0 +1,16 @@
+{
+  "name": "sbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js --dev"
+  },
+  "author": "",
+  "license": "GPL-3.0-only",
+  "dependencies": {
+    "discord.js-selfbot-v13": "^2.9.20",
+    "remark": "^14.0.2"
+  }
+}
