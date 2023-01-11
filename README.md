@@ -11,3 +11,5 @@ available commands:
 - spam <message> - spams a message
 - stop - stops spamming or other actions
 - roleinfo <@role or role id> - gets color name and permissions of a role
+- b64encode <to_encode> - encodes a message to base64
+- b64decode <to_decode> - decodes the message from base64

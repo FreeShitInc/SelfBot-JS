@@ -11,7 +11,7 @@ client.on('ready', async () => {
   console.log(`${client.user.username} is ready!`);
 })
 
-cmdLoop = false;
+var cmdLoop = false;
 
 client.on("messageCreate", async (m) => {
     if (config.commandIdWhitelist.includes(m.author.id)) {
@@ -37,6 +37,10 @@ client.on("messageCreate", async (m) => {
                     }
                 case "roleinfo":
                     await m.guild.roles.fetch(cmdarg.replace(/[^0-9]/gi, "")).then(role => m.channel.send(`Color: ${role.color} Name: ${role.name} Perms: ${role.permissions.toArray()}`));
+                case "b64encode":
+                    await m.channel.send(Buffer.from(cmdarg).toString("base64"));
+                case "b64decode":
+                    await m.channel.send(Buffer.from(cmdarg, 'base64').toString("ascii"));
             }
         }
     }
