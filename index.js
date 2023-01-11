@@ -3,7 +3,6 @@ var config = require("./config.json");
 if (process.argv.includes("--dev")) {
     config = require("./devconf.json");
 }
-console.log(config);
 
 const { Client } = require('discord.js-selfbot-v13');
 const client = new Client({});
